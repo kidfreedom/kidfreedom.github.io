@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>工作积累</title>
+      <link href="/2020/07/15/gong-zuo-ji-lei/"/>
+      <url>/2020/07/15/gong-zuo-ji-lei/</url>
+      
+        <content type="html"><![CDATA[<h2 id="Lua中require、dofile、loadfile的区别"><a href="#Lua中require、dofile、loadfile的区别" class="headerlink" title="Lua中require、dofile、loadfile的区别"></a>Lua中require、dofile、loadfile的区别</h2><p><a href="https://blog.csdn.net/leecrest/article/details/31742419" target="_blank" rel="noopener">https://blog.csdn.net/leecrest/article/details/31742419</a></p><h2 id="C-终结器就是析构函数"><a href="#C-终结器就是析构函数" class="headerlink" title="C#终结器就是析构函数"></a>C#终结器就是析构函数</h2><h2 id="GC-SuppressFinalize用法"><a href="#GC-SuppressFinalize用法" class="headerlink" title="GC.SuppressFinalize用法"></a>GC.SuppressFinalize用法</h2><p><a href="https://www.codenong.com/151051/" target="_blank" rel="noopener">https://www.codenong.com/151051/</a></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>壳木工作记录</title>
+      <link href="/2020/07/15/ke-mu-gong-zuo-ji-lu/"/>
+      <url>/2020/07/15/ke-mu-gong-zuo-ji-lu/</url>
+      
+        <content type="html"><![CDATA[<h2 id="Aoz设计分辨率750-1334"><a href="#Aoz设计分辨率750-1334" class="headerlink" title="Aoz设计分辨率750*1334"></a>Aoz设计分辨率750*1334</h2><h2 id="Lua编辑器使用的是IntelliJ-IDEA和emmylua插件"><a href="#Lua编辑器使用的是IntelliJ-IDEA和emmylua插件" class="headerlink" title="Lua编辑器使用的是IntelliJ IDEA和emmylua插件"></a>Lua编辑器使用的是IntelliJ IDEA和emmylua插件</h2><h3 id="Lua调试配置"><a href="#Lua调试配置" class="headerlink" title="Lua调试配置"></a>Lua调试配置</h3><p><a href="https://www.jianshu.com/p/5a453a80b7e9" target="_blank" rel="noopener">https://www.jianshu.com/p/5a453a80b7e9</a></p><p>NGUI ScrollView相关功能介绍<br><a href="https://gameinstitute.qq.com/community/detail/127300" target="_blank" rel="noopener">https://gameinstitute.qq.com/community/detail/127300</a><br><a href="https://www.cnblogs.com/hammerc/p/4656505.html" target="_blank" rel="noopener">https://www.cnblogs.com/hammerc/p/4656505.html</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 工作记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 壳木 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Unity Ecs 使用问题</title>
+      <link href="/2020/07/08/unity-ecs-shi-yong-wen-ti/"/>
+      <url>/2020/07/08/unity-ecs-shi-yong-wen-ti/</url>
+      
+        <content type="html"><![CDATA[<h2 id="JobSystem使用问题"><a href="#JobSystem使用问题" class="headerlink" title="JobSystem使用问题"></a>JobSystem使用问题</h2><ol><li>函数体内断点不能命中</li><li>函数体内不能使用C#的容器只能使用Unity的NativeContainer容器，而NativeHashMap不能是使用<code>集合初始化器</code>，如果涉及到读取静态数据的时候将会很麻烦。</li></ol>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Ecs </tag>
+            
+            <tag> Unity </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>2020年看过的电影</title>
+      <link href="/2020/06/29/2020-nian-kan-guo-de-dian-ying/"/>
+      <url>/2020/06/29/2020-nian-kan-guo-de-dian-ying/</url>
+      
+        <content type="html"><![CDATA[<h2 id="辩护人"><a href="#辩护人" class="headerlink" title="辩护人"></a>辩护人</h2><p><a href="https://movie.douban.com/subject/21937445/" target="_blank" rel="noopener">https://movie.douban.com/subject/21937445/</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 生活 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 电影 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>网站收藏</title>
+      <link href="/2020/06/28/wang-zhan-shou-cang/"/>
+      <url>/2020/06/28/wang-zhan-shou-cang/</url>
+      
+        <content type="html"><![CDATA[<h2 id="Effective-C-改善C-程序的50种方法"><a href="#Effective-C-改善C-程序的50种方法" class="headerlink" title="Effective C# 改善C#程序的50种方法"></a>Effective C# 改善C#程序的50种方法</h2><p><a href="https://wizardforcel.gitbooks.io/effective-csharp/content/" target="_blank" rel="noopener">https://wizardforcel.gitbooks.io/effective-csharp/content/</a></p><h2 id="LiteNetLib"><a href="#LiteNetLib" class="headerlink" title="LiteNetLib"></a>LiteNetLib</h2><p><a href="https://hebomou.top/archives/1729" target="_blank" rel="noopener">https://hebomou.top/archives/1729</a></p><h2 id="模糊算法"><a href="#模糊算法" class="headerlink" title="模糊算法"></a>模糊算法</h2><p><a href="https://zhuanlan.zhihu.com/p/125744132" target="_blank" rel="noopener">https://zhuanlan.zhihu.com/p/125744132</a><br><a href="https://github.com/QianMo/X-PostProcessing-Library" target="_blank" rel="noopener">https://github.com/QianMo/X-PostProcessing-Library</a></p><h2 id="C-and-Shader-Tutorials-for-the-Unity-Engine"><a href="#C-and-Shader-Tutorials-for-the-Unity-Engine" class="headerlink" title="C# and Shader Tutorials for the Unity Engine"></a>C# and Shader Tutorials for the Unity Engine</h2><p><a href="https://catlikecoding.com/unity/tutorials/" target="_blank" rel="noopener">https://catlikecoding.com/unity/tutorials/</a></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Unity ShaderGraph</title>
+      <link href="/2020/06/26/unity-shadergraph/"/>
+      <url>/2020/06/26/unity-shadergraph/</url>
+      
+        <content type="html"><![CDATA[<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><ol><li><a href="https://zhuanlan.zhihu.com/p/35887656" target="_blank" rel="noopener">https://zhuanlan.zhihu.com/p/35887656</a></li></ol>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Unity </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>C#装箱和拆箱</title>
+      <link href="/2020/06/26/c-zhuang-xiang-he-chai-xiang/"/>
+      <url>/2020/06/26/c-zhuang-xiang-he-chai-xiang/</url>
+      
+        <content type="html"><![CDATA[<h2 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h2><p>装箱是将<code>值类型</code>转换为<code>引用类型</code>。<br>拆箱是将<code>引用类型</code>转换为<code>值类型</code>。</p><h2 id="装箱的内存操作"><a href="#装箱的内存操作" class="headerlink" title="装箱的内存操作"></a>装箱的内存操作</h2><ol><li>在托管堆上分配一段内存(大小为值类型实例大小加上一个方法表指针和一个SyncBlockIndex)。 </li><li>将值类型的数据拷贝到刚刚分配的内存中。</li><li>返回托管堆中新分配对象的地址。这个地址就是一个指向对象的引用了。</li></ol><blockquote><p>进行一次装箱要进行<code>分配内存</code>和<code>拷贝数据</code>。</p></blockquote><h2 id="拆箱的内存操作"><a href="#拆箱的内存操作" class="headerlink" title="拆箱的内存操作"></a>拆箱的内存操作</h2><ol><li>首先获取托管堆中属于值类型那部分字段的地址，这一步是严格意义上的拆箱。</li><li>将引用对象中的值拷贝到位于线程堆栈上的值类型实例中。</li></ol><blockquote><p>进行一次拆箱要进行<code>拷贝数据</code>。</p></blockquote><h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p><a href="https://www.bilibili.com/video/BV1eW411v76V?from=search&amp;seid=11233487436428803311" target="_blank" rel="noopener">https://www.bilibili.com/video/BV1eW411v76V?from=search&amp;seid=11233487436428803311</a><br><a href="https://blog.csdn.net/qiaoquan3/article/details/51439726" target="_blank" rel="noopener">https://blog.csdn.net/qiaoquan3/article/details/51439726</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 语言基础 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 面试 </tag>
+            
+            <tag> C# </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>C++拷贝构造函数和赋值运算符</title>
+      <link href="/2020/06/22/c-kao-bei-gou-zao-han-shu/"/>
+      <url>/2020/06/22/c-kao-bei-gou-zao-han-shu/</url>
+      
+        <content type="html"><![CDATA[<h2 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h2><p>在默认情况下（用户没有定义，但是也没有显式的删除），编译器会自动的隐式生成一个拷贝构造函数和赋值运算符。但用户可以使用<code>delete</code>来指定不生成拷贝构造函数和赋值运算符，这样的对象就不能通过值传递，也不能进行赋值运算。</p><p>显示定义：</p><pre class=" language-cpp"><code class="language-cpp"><span class="token keyword">class</span> <span class="token class-name">Preson</span><span class="token punctuation">{</span><span class="token keyword">public</span><span class="token operator">:</span>    <span class="token comment" spellcheck="true">// 拷贝构造函数</span>    <span class="token function">Preson</span><span class="token punctuation">(</span><span class="token keyword">const</span> Preson<span class="token operator">&amp;</span> other<span class="token punctuation">)</span>    <span class="token punctuation">{</span>    <span class="token punctuation">}</span>    <span class="token comment" spellcheck="true">// 赋值运算符函数</span>    Preson<span class="token operator">&amp;</span> <span class="token keyword">operator</span><span class="token operator">=</span><span class="token punctuation">(</span><span class="token keyword">const</span> Preson<span class="token operator">&amp;</span> other<span class="token punctuation">)</span>    <span class="token punctuation">{</span>    <span class="token punctuation">}</span><span class="token punctuation">}</span></code></pre><p>C++11新特性，显示删除：</p><pre class=" language-cpp"><code class="language-cpp"><span class="token keyword">class</span> <span class="token class-name">Preson</span><span class="token punctuation">{</span><span class="token keyword">public</span><span class="token operator">:</span>    <span class="token comment" spellcheck="true">// 拷贝构造函数</span>    <span class="token function">Preson</span><span class="token punctuation">(</span><span class="token keyword">const</span> Preson<span class="token operator">&amp;</span> other<span class="token punctuation">)</span> <span class="token operator">=</span> <span class="token keyword">delete</span><span class="token punctuation">;</span>    <span class="token comment" spellcheck="true">// 赋值运算符函数</span>    Preson<span class="token operator">&amp;</span> <span class="token keyword">operator</span><span class="token operator">=</span><span class="token punctuation">(</span><span class="token keyword">const</span> Preson<span class="token operator">&amp;</span> other<span class="token punctuation">)</span> <span class="token operator">=</span> <span class="token keyword">delete</span><span class="token punctuation">;</span><span class="token punctuation">}</span></code></pre><blockquote><p>注意：拷贝构造函数的参数一定是以<code>引用的方式传递的</code>，如果使用值传递的方式，强出现无限循环递归，栈会溢出。</p></blockquote><h2 id="何时调用"><a href="#何时调用" class="headerlink" title="何时调用"></a>何时调用</h2><pre class=" language-cpp"><code class="language-cpp"><span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;iostream></span></span><span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span><span class="token keyword">class</span> <span class="token class-name">Preson</span><span class="token punctuation">{</span><span class="token keyword">public</span><span class="token operator">:</span>    <span class="token function">Preson</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>    <span class="token function">Preson</span><span class="token punctuation">(</span><span class="token keyword">const</span> Preson<span class="token operator">&amp;</span> other<span class="token punctuation">)</span>    <span class="token punctuation">{</span>        cout <span class="token operator">&lt;&lt;</span> <span class="token string">"拷贝构造函数"</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>        name <span class="token operator">=</span> other<span class="token punctuation">.</span>name<span class="token punctuation">;</span>    <span class="token punctuation">}</span>    Preson<span class="token operator">&amp;</span> <span class="token keyword">operator</span><span class="token operator">=</span><span class="token punctuation">(</span><span class="token keyword">const</span> Preson<span class="token operator">&amp;</span> other<span class="token punctuation">)</span>    <span class="token punctuation">{</span>        cout <span class="token operator">&lt;&lt;</span> <span class="token string">"赋值运算符函数"</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>        name <span class="token operator">=</span> other<span class="token punctuation">.</span>name<span class="token punctuation">;</span>        <span class="token keyword">return</span> <span class="token operator">*</span><span class="token keyword">this</span><span class="token punctuation">;</span>    <span class="token punctuation">}</span><span class="token keyword">private</span><span class="token operator">:</span>    string name<span class="token punctuation">;</span><span class="token punctuation">}</span><span class="token punctuation">;</span><span class="token keyword">void</span> <span class="token function">Fun1</span><span class="token punctuation">(</span>Preson p<span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token punctuation">}</span>Preson <span class="token function">Fun2</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>    Preson p<span class="token punctuation">;</span>    <span class="token keyword">return</span> p<span class="token punctuation">;</span><span class="token punctuation">}</span><span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>    Preson p<span class="token punctuation">;</span>    cout <span class="token operator">&lt;&lt;</span> <span class="token string">"1"</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>    Preson p1 <span class="token operator">=</span> p<span class="token punctuation">;</span>    Preson p2<span class="token punctuation">;</span>    cout <span class="token operator">&lt;&lt;</span> <span class="token string">"2"</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>    p2 <span class="token operator">=</span> p<span class="token punctuation">;</span>    cout <span class="token operator">&lt;&lt;</span> <span class="token string">"3"</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>    <span class="token function">Fun1</span><span class="token punctuation">(</span>p<span class="token punctuation">)</span><span class="token punctuation">;</span>    cout <span class="token operator">&lt;&lt;</span> <span class="token string">"4"</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>    p2 <span class="token operator">=</span> <span class="token function">Fun2</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>    cout <span class="token operator">&lt;&lt;</span> <span class="token string">"5"</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>    Preson p3 <span class="token operator">=</span> <span class="token function">Fun2</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token punctuation">}</span></code></pre><p>运行结果如下：<br><img src="/images/C++%E6%8B%B7%E8%B4%9D%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0%E5%92%8C%E8%B5%8B%E5%80%BC%E8%BF%90%E7%AE%97%E7%AC%A6/1.jpg" alt=""></p><ol><li>虽然出现的<code>=</code>，但是实际上使用对象p来创建一个新的对象p1，也就是构造新的对象，所以调用的是<code>拷贝构造函数</code>。</li><li>首先声明一个对象p2，然后使用赋值运算符”=”，将p的值复制给p2，显然是调用赋值运算符，为一个已经存在的对象赋值，所以调用的是<code>赋值运算符函数</code>。</li><li>以<code>值传递的方式</code>将对象p2传入函数Fun1内，调用拷贝构造函数<code>构建一个函数Fun1可用的实参</code>，所以调用的是<code>拷贝构造函数</code>。</li><li>在函数Fun2以值传递的方式返回时，用拷贝构造函数创建一个临时对象作为返回值，，所以调用的是<code>拷贝构造函数</code>。在函数返回后将临时变量赋值给已经初始化过的p2，所以调用的是<code>赋值运算符函数</code>。</li><li>如果按照4的情况解释，应该是首先调用拷贝构造函数创建临时对象；然后再调用拷贝构造函数使用刚才创建的临时对象创建新的对象p3，也就是会调用两次拷贝构造函数。可能是编译器优化了，应该是直接调用拷贝构造函数使用返回值创建了对象p3，所以只调用了一次<code>拷贝构造函数</code>。</li></ol><h3 id="拷贝构造函数"><a href="#拷贝构造函数" class="headerlink" title="拷贝构造函数"></a>拷贝构造函数</h3><ol><li>当对象作为函数的参数，以值传递的方式传递给函数时。</li><li>当对象作为函数的返回值，以值传递的方式返回时。</li><li>当使用一个对象初始化另一个对象时。</li></ol><h3 id="赋值运算符函数"><a href="#赋值运算符函数" class="headerlink" title="赋值运算符函数"></a>赋值运算符函数</h3><p>当一个对象赋值给另一个已经初始化完成的对象时。</p><h2 id="什么时候需要使用"><a href="#什么时候需要使用" class="headerlink" title="什么时候需要使用"></a>什么时候需要使用</h2><p>当成员变量里有指针类型的时候，因为默认的拷贝构造函数和赋值运算符函数都是值的复制是<code>浅拷贝的</code>，对于指针只是简单的值复制并不能分割开两个对象的关联，任何一个对象对该指针的操作都会影响到另一个对象。这时候就需要提供自定义的<code>深拷贝</code>的拷贝构造函数，消除这种影响。</p><p>通常的原则是：</p><ol><li>含有指针类型的成员或者有动态分配内存的成员都应该提供自定义的拷贝构造函数。</li><li>在提供拷贝构造函数的同时，还应该考虑实现自定义的赋值运算符。</li><li>对于值类型的成员进行值复制。</li><li>对于指针和动态分配的空间，在拷贝中应重新分配分配空间。</li><li>对于基类，要调用基类合适的拷贝方法，完成基类的拷贝。</li></ol><h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><ul><li>拷贝构造函数和赋值运算符的行为比较相似，却产生不同的结果；拷贝构造函数<code>使用已有的对象创建一个新的对象</code>，赋值运算符<code>是将一个对象的值复制给另一个已存在的对象</code>。区分是调用拷贝构造函数还是赋值运算符，主要是<code>否有新的对象产生</code>。</li><li>关于深拷贝和浅拷贝。当类有指针成员或有动态分配空间，都应实现自定义的拷贝构造函数。提供了拷贝构造函数，最后也实现赋值运算符。</li></ul><h3 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h3><p><a href="https://www.cnblogs.com/wangguchangqing/p/6141743.html" target="_blank" rel="noopener">https://www.cnblogs.com/wangguchangqing/p/6141743.html</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 语言基础 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 面试 </tag>
+            
+            <tag> C++ </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>UV坐标</title>
+      <link href="/2020/06/22/uv-zuo-biao/"/>
+      <url>/2020/06/22/uv-zuo-biao/</url>
+      
+        <content type="html"><![CDATA[<h2 id="视频"><a href="#视频" class="headerlink" title="视频"></a>视频</h2><p><a href="https://www.bilibili.com/video/BV1Pt411K7Jv?from=search&amp;seid=4784504123734508545" target="_blank" rel="noopener">https://www.bilibili.com/video/BV1Pt411K7Jv?from=search&amp;seid=4784504123734508545</a><br><a href="https://www.bilibili.com/video/BV18E411j7oY?from=search&amp;seid=4784504123734508545" target="_blank" rel="noopener">https://www.bilibili.com/video/BV18E411j7oY?from=search&amp;seid=4784504123734508545</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 渲染 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> UV坐标 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>2020面试总结</title>
+      <link href="/2020/06/21/2020-mian-shi-zong-jie/"/>
+      <url>/2020/06/21/2020-mian-shi-zong-jie/</url>
+      
+        <content type="html"><![CDATA[<h3 id="lua协程与Unity协程之间的区别是什么？"><a href="#lua协程与Unity协程之间的区别是什么？" class="headerlink" title="lua协程与Unity协程之间的区别是什么？"></a>lua协程与Unity协程之间的区别是什么？</h3><h3 id="两个UI中间加一个粒子特效，怎么解决遮挡关系错误的问题？"><a href="#两个UI中间加一个粒子特效，怎么解决遮挡关系错误的问题？" class="headerlink" title="两个UI中间加一个粒子特效，怎么解决遮挡关系错误的问题？"></a>两个UI中间加一个粒子特效，怎么解决遮挡关系错误的问题？</h3><h3 id="屏幕坐标到世界坐标，世界坐标到屏幕坐标，都经历了那些过程？"><a href="#屏幕坐标到世界坐标，世界坐标到屏幕坐标，都经历了那些过程？" class="headerlink" title="屏幕坐标到世界坐标，世界坐标到屏幕坐标，都经历了那些过程？"></a>屏幕坐标到世界坐标，世界坐标到屏幕坐标，都经历了那些过程？</h3><h3 id="cpp析构函数为什么要虚化？"><a href="#cpp析构函数为什么要虚化？" class="headerlink" title="cpp析构函数为什么要虚化？"></a>cpp析构函数为什么要虚化？</h3><h3 id="cpp成员函数占内存么？"><a href="#cpp成员函数占内存么？" class="headerlink" title="cpp成员函数占内存么？"></a>cpp成员函数占内存么？</h3><h3 id="将一个链表逆序？"><a href="#将一个链表逆序？" class="headerlink" title="将一个链表逆序？"></a>将一个链表逆序？</h3><h3 id="内存命中的问题？"><a href="#内存命中的问题？" class="headerlink" title="内存命中的问题？"></a>内存命中的问题？</h3><h3 id="浮点计算的平台差异？"><a href="#浮点计算的平台差异？" class="headerlink" title="浮点计算的平台差异？"></a>浮点计算的平台差异？</h3><p><a href="https://www.cnblogs.com/daizhj/articles/3605133.html" target="_blank" rel="noopener">https://www.cnblogs.com/daizhj/articles/3605133.html</a></p><h3 id="在待排序数据有序的情况下，一下那种排序算法花的时间最多？1-快速排序-2-希尔排序-3-插入排序-4-堆排序"><a href="#在待排序数据有序的情况下，一下那种排序算法花的时间最多？1-快速排序-2-希尔排序-3-插入排序-4-堆排序" class="headerlink" title="在待排序数据有序的情况下，一下那种排序算法花的时间最多？1.快速排序 2.希尔排序 3.插入排序 4.堆排序"></a>在待排序数据有序的情况下，一下那种排序算法花的时间最多？1.快速排序 2.希尔排序 3.插入排序 4.堆排序</h3><h3 id="二叉树三种遍历方法（根据两种排序求第三种的顺序）"><a href="#二叉树三种遍历方法（根据两种排序求第三种的顺序）" class="headerlink" title="二叉树三种遍历方法（根据两种排序求第三种的顺序）"></a>二叉树三种遍历方法（根据两种排序求第三种的顺序）</h3><p><a href="https://blog.csdn.net/jsjxy2009/article/details/39403453" target="_blank" rel="noopener">https://blog.csdn.net/jsjxy2009/article/details/39403453</a></p><h3 id="向量的点乘和叉乘的数学意义？"><a href="#向量的点乘和叉乘的数学意义？" class="headerlink" title="向量的点乘和叉乘的数学意义？"></a>向量的点乘和叉乘的数学意义？</h3><p><a href="https://blog.csdn.net/qq_27161673/article/details/53056999" target="_blank" rel="noopener">https://blog.csdn.net/qq_27161673/article/details/53056999</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 面试 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 面试 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hexo搭建</title>
+      <link href="/2020/06/21/bo-ke-da-jian/"/>
+      <url>/2020/06/21/bo-ke-da-jian/</url>
+      
+        <content type="html"><![CDATA[<h2 id="安装Node-js"><a href="#安装Node-js" class="headerlink" title="安装Node.js"></a>安装Node.js</h2><ol><li><a href="https://nodejs.org/zh-cn/" target="_blank" rel="noopener">下载地址</a>，安装选项全部默认，一路点击Next。</li><li>安装检查，<code>Win+R</code>打开命令提示符，输入<code>node -v</code>和<code>npm -v</code>，如果出现版本号，那么就安装成功了。<br><img src="/images/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/2.jpg" alt=""></li></ol><h2 id="创建本地Hexo"><a href="#创建本地Hexo" class="headerlink" title="创建本地Hexo"></a>创建本地Hexo</h2><ol><li>找一个地方新建一个文件夹，用来存放自己的博客文件，比如我的博客目录是<code>D:\Blog\</code>，进入文件夹目录。</li><li>在该目录下右键点击<code>Git Bash Here</code>, 打开git的控制台窗口，之后所有的操作都是在git控制台进行的。</li><li>输入<code>npm i hexo-cli -g</code>安装Hexo。</li><li>输入<code>hexo -v</code>验证是否安装成功。</li><li>输入<code>hexo init</code>初始化文件夹。</li><li>输入<code>npm install</code>安装必备的组件。</li><li>输入<code>hexo clean</code>清理。</li><li>输入<code>hexo g</code>生成静态网页。</li><li>输入<code>hexo s</code>打开本地服务器。</li><li>打开浏览器<a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a>，看到下图说操作正确。</li><li>输入<code>ctrl+c</code>关闭本地服务器。</li></ol><p><img src="/images/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/1.jpg" alt=""></p><h2 id="新建文章"><a href="#新建文章" class="headerlink" title="新建文章"></a>新建文章</h2><ol><li>打开git控制台，输入<code>hexo new post &quot;文章标题&quot;</code>，在<code>D:\Blog\source\_posts</code>目录下生成一个名为<code>文章标题.md</code>的文件。</li><li><code>文章标题.md</code>开始编辑。</li><li>输入<code>hexo clean</code>清理。</li><li>输入<code>hexo g</code>生成静态网页。</li><li>输入<code>hexo s</code>打开本地服务器。</li><li>打开浏览器<a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a>预览。</li></ol><h2 id="连接Github与本地"><a href="#连接Github与本地" class="headerlink" title="连接Github与本地"></a>连接Github与本地</h2><ol><li>在Github上建立一个新的仓库，名字为<code>你的账号名字.github.io</code>，如：<code>your_name.github.io</code>。</li><li>打开<code>D:\Blog\_config.yml</code>文件。</li><li>在最下面找到<code># Deployment</code>标签，修改如下。</li></ol><pre><code>deploy:  type: &#39;git&#39;  repo: https://github.com/your_name/your_name.github.io.git  branch: master</code></pre><ol><li>打开git控制台，输入<code>npm i hexo-deployer-git</code>安装插件。</li><li>输入<code>hexo clean</code>清理。</li><li>输入<code>hexo g</code>生成静态网页。</li><li>输入<code>hexo d</code>上传到github。</li><li>打开浏览器，输入地址<code>https://your_name.github.io</code>，如果没有正常显示可以需要等一下，再刷新看看。</li></ol><h2 id="更换主题"><a href="#更换主题" class="headerlink" title="更换主题"></a>更换主题</h2><p><a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank" rel="noopener">hexo-theme-matery</a></p><p><a href="https://github.com/blinkfox/hexo-theme-matery/blob/develop/README_CN.md" target="_blank" rel="noopener">中文说明文档</a></p><h3 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h3><ol><li><a href="https://zhuanlan.zhihu.com/p/35668237" target="_blank" rel="noopener">https://zhuanlan.zhihu.com/p/35668237</a></li><li><a href="https://www.bilibili.com/video/BV1EE411N7Bi?p=1" target="_blank" rel="noopener">https://www.bilibili.com/video/BV1EE411N7Bi?p=1</a></li><li><a href="https://www.bilibili.com/video/BV1Yb411a7ty?t=1163" target="_blank" rel="noopener">https://www.bilibili.com/video/BV1Yb411a7ty?t=1163</a></li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> 博客搭建 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Hexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
+</search>
