@@ -21,7 +21,7 @@
       <link href="/2020/07/15/gong-zuo-ji-lei/"/>
       <url>/2020/07/15/gong-zuo-ji-lei/</url>
       
-        <content type="html"><![CDATA[<h2 id="Lua中require、dofile、loadfile的区别"><a href="#Lua中require、dofile、loadfile的区别" class="headerlink" title="Lua中require、dofile、loadfile的区别"></a>Lua中require、dofile、loadfile的区别</h2><p><a href="https://blog.csdn.net/leecrest/article/details/31742419" target="_blank" rel="noopener">https://blog.csdn.net/leecrest/article/details/31742419</a></p><h2 id="C-终结器就是析构函数"><a href="#C-终结器就是析构函数" class="headerlink" title="C#终结器就是析构函数"></a>C#终结器就是析构函数</h2><h2 id="GC-SuppressFinalize用法"><a href="#GC-SuppressFinalize用法" class="headerlink" title="GC.SuppressFinalize用法"></a>GC.SuppressFinalize用法</h2><p><a href="https://www.codenong.com/151051/" target="_blank" rel="noopener">https://www.codenong.com/151051/</a></p><h2 id="计算函数执行时间"><a href="#计算函数执行时间" class="headerlink" title="计算函数执行时间"></a>计算函数执行时间</h2><pre class=" language-csharp"><code class="language-csharp"><span class="token keyword">private</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">CalculateExcutedTime</span><span class="token punctuation">(</span><span class="token keyword">string</span> tag<span class="token punctuation">,</span> Action func<span class="token punctuation">)</span><span class="token punctuation">{</span>    <span class="token keyword">var</span> oldTime <span class="token operator">=</span> DateTime<span class="token punctuation">.</span>Now<span class="token punctuation">;</span>    <span class="token function">func</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>    <span class="token keyword">var</span> newTime <span class="token operator">=</span> DateTime<span class="token punctuation">.</span>Now<span class="token punctuation">;</span>    <span class="token function">Log</span><span class="token punctuation">(</span><span class="token string">"Execute time of \""</span> <span class="token operator">+</span> tag <span class="token operator">+</span> <span class="token string">"\" is "</span> <span class="token operator">+</span> <span class="token punctuation">(</span>newTime <span class="token operator">-</span> oldTime<span class="token punctuation">)</span><span class="token punctuation">.</span>TotalSeconds <span class="token operator">+</span> <span class="token string">" seconds"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token punctuation">}</span></code></pre><h2 id="Git"><a href="#Git" class="headerlink" title="Git"></a>Git</h2><h3 id="git-clone-–depth-1-之后怎样获取完整仓库"><a href="#git-clone-–depth-1-之后怎样获取完整仓库" class="headerlink" title="git clone –depth=1 之后怎样获取完整仓库?"></a>git clone –depth=1 之后怎样获取完整仓库?</h3><p><code>git pull --unshallow</code></p>]]></content>
+        <content type="html"><![CDATA[<h2 id="Lua中require、dofile、loadfile的区别"><a href="#Lua中require、dofile、loadfile的区别" class="headerlink" title="Lua中require、dofile、loadfile的区别"></a>Lua中require、dofile、loadfile的区别</h2><p><a href="https://blog.csdn.net/leecrest/article/details/31742419" target="_blank" rel="noopener">https://blog.csdn.net/leecrest/article/details/31742419</a></p><h2 id="C-终结器就是析构函数"><a href="#C-终结器就是析构函数" class="headerlink" title="C#终结器就是析构函数"></a>C#终结器就是析构函数</h2><h2 id="GC-SuppressFinalize用法"><a href="#GC-SuppressFinalize用法" class="headerlink" title="GC.SuppressFinalize用法"></a>GC.SuppressFinalize用法</h2><p><a href="https://www.codenong.com/151051/" target="_blank" rel="noopener">https://www.codenong.com/151051/</a></p><h2 id="计算函数执行时间"><a href="#计算函数执行时间" class="headerlink" title="计算函数执行时间"></a>计算函数执行时间</h2><pre class=" language-csharp"><code class="language-csharp"><span class="token keyword">private</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">CalculateExcutedTime</span><span class="token punctuation">(</span><span class="token keyword">string</span> tag<span class="token punctuation">,</span> Action func<span class="token punctuation">)</span><span class="token punctuation">{</span>    <span class="token keyword">var</span> oldTime <span class="token operator">=</span> DateTime<span class="token punctuation">.</span>Now<span class="token punctuation">;</span>    <span class="token function">func</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>    <span class="token keyword">var</span> newTime <span class="token operator">=</span> DateTime<span class="token punctuation">.</span>Now<span class="token punctuation">;</span>    <span class="token function">Log</span><span class="token punctuation">(</span><span class="token string">"Execute time of \""</span> <span class="token operator">+</span> tag <span class="token operator">+</span> <span class="token string">"\" is "</span> <span class="token operator">+</span> <span class="token punctuation">(</span>newTime <span class="token operator">-</span> oldTime<span class="token punctuation">)</span><span class="token punctuation">.</span>TotalSeconds <span class="token operator">+</span> <span class="token string">" seconds"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token punctuation">}</span></code></pre><hr><h2 id="Git"><a href="#Git" class="headerlink" title="Git"></a>Git</h2><h3 id="git-clone-–depth-1-之后怎样获取完整仓库"><a href="#git-clone-–depth-1-之后怎样获取完整仓库" class="headerlink" title="git clone –depth=1 之后怎样获取完整仓库?"></a>git clone –depth=1 之后怎样获取完整仓库?</h3><p><code>git pull --unshallow</code></p>]]></content>
       
       
       
@@ -65,9 +65,9 @@
       
         <tags>
             
-            <tag> Ecs </tag>
-            
             <tag> Unity </tag>
+            
+            <tag> Ecs </tag>
             
         </tags>
       
@@ -176,9 +176,9 @@
       
         <tags>
             
-            <tag> 面试 </tag>
-            
             <tag> C++ </tag>
+            
+            <tag> 面试 </tag>
             
         </tags>
       
