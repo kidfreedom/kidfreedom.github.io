@@ -460,6 +460,14 @@
             <div id="articleContent">
                 <h2 id="Lua中require、dofile、loadfile的区别"><a href="#Lua中require、dofile、loadfile的区别" class="headerlink" title="Lua中require、dofile、loadfile的区别"></a>Lua中require、dofile、loadfile的区别</h2><p><a href="https://blog.csdn.net/leecrest/article/details/31742419" target="_blank" rel="noopener">https://blog.csdn.net/leecrest/article/details/31742419</a></p>
 <h2 id="C-终结器就是析构函数"><a href="#C-终结器就是析构函数" class="headerlink" title="C#终结器就是析构函数"></a>C#终结器就是析构函数</h2><h2 id="GC-SuppressFinalize用法"><a href="#GC-SuppressFinalize用法" class="headerlink" title="GC.SuppressFinalize用法"></a>GC.SuppressFinalize用法</h2><p><a href="https://www.codenong.com/151051/" target="_blank" rel="noopener">https://www.codenong.com/151051/</a></p>
+<h2 id="计算函数执行时间"><a href="#计算函数执行时间" class="headerlink" title="计算函数执行时间"></a>计算函数执行时间</h2><pre class=" language-csharp"><code class="language-csharp"><span class="token keyword">private</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">CalculateExcutedTime</span><span class="token punctuation">(</span><span class="token keyword">string</span> tag<span class="token punctuation">,</span> Action func<span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">var</span> oldTime <span class="token operator">=</span> DateTime<span class="token punctuation">.</span>Now<span class="token punctuation">;</span>
+    <span class="token function">func</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">var</span> newTime <span class="token operator">=</span> DateTime<span class="token punctuation">.</span>Now<span class="token punctuation">;</span>
+    <span class="token function">Log</span><span class="token punctuation">(</span><span class="token string">"Execute time of \""</span> <span class="token operator">+</span> tag <span class="token operator">+</span> <span class="token string">"\" is "</span> <span class="token operator">+</span> <span class="token punctuation">(</span>newTime <span class="token operator">-</span> oldTime<span class="token punctuation">)</span><span class="token punctuation">.</span>TotalSeconds <span class="token operator">+</span> <span class="token string">" seconds"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
+<h2 id="Git"><a href="#Git" class="headerlink" title="Git"></a>Git</h2><h3 id="git-clone-–depth-1-之后怎样获取完整仓库"><a href="#git-clone-–depth-1-之后怎样获取完整仓库" class="headerlink" title="git clone –depth=1 之后怎样获取完整仓库?"></a>git clone –depth=1 之后怎样获取完整仓库?</h3><p><code>git pull --unshallow</code></p>
 
             </div>
             <hr/>
@@ -662,31 +670,31 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;本篇
-            </div>
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2020/07/15/gong-zuo-ji-lei/">
+                <a href="/2020/07/28/unity-xing-neng-you-hua/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="工作积累">
+                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="Unity性能优化">
                         
-                        <span class="card-title">工作积累</span>
+                        <span class="card-title">Unity性能优化</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Lua中require、dofile、loadfile的区别https://blog.csdn.net/leecrest/article/details/31742419
-C#终结器就是析构函数GC.SuppressFinalize用法ht
+                            UI动态静态分离Split Canvas For Dynamic Objects
+Working with Static and Dynamic Canvases
+
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-07-15
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-07-28
+                        </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -695,7 +703,6 @@ C#终结器就是析构函数GC.SuppressFinalize用法ht
                         </span>
                     </div>
                 </div>
-
                 
             </div>
         </div>
