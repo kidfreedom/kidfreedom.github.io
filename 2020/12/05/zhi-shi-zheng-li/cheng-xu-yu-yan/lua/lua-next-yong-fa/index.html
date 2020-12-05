@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="SpriteAtlas, 王梓臣的博客">
+    <meta name="keywords" content="lua_next用法, 王梓臣的博客">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>SpriteAtlas | 王梓臣的博客</title>
+    <title>lua_next用法 | 王梓臣的博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -308,12 +308,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/6.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/17.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">SpriteAtlas</h1>
+                    <h1 class="description center-align post-title">lua_next用法</h1>
                 </div>
             </div>
         </div>
@@ -428,12 +428,29 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/Lua-C-API/">
+                                <span class="chip bg-color">Lua C API</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/%E7%A8%8B%E5%BA%8F%E8%AF%AD%E8%A8%80/" class="post-category">
+                                程序语言
+                            </a>
+                        
+                            <a href="/categories/%E7%A8%8B%E5%BA%8F%E8%AF%AD%E8%A8%80/Lua/" class="post-category">
+                                Lua
+                            </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -442,7 +459,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-12-04
+                    2020-12-05
                 </div>
                 
 
@@ -458,9 +475,150 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p><a href="https://www.jianshu.com/p/2640bdb29fdc" target="_blank" rel="noopener">https://www.jianshu.com/p/2640bdb29fdc</a></p>
-<p><a href="https://blog.csdn.net/egostudio/article/details/104695907" target="_blank" rel="noopener">https://blog.csdn.net/egostudio/article/details/104695907</a></p>
-<p><a href="http://www.liuocean.com/index.php/2019/12/22/et-addressables-spriteatlas-tu-ji-jie-jue-fang-an/" target="_blank" rel="noopener">http://www.liuocean.com/index.php/2019/12/22/et-addressables-spriteatlas-tu-ji-jie-jue-fang-an/</a></p>
+                <h1 id="lua-next用法"><a href="#lua-next用法" class="headerlink" title="lua_next用法"></a>lua_next用法</h1><pre class=" language-cpp"><code class="language-cpp"><span class="token keyword">int</span> <span class="token function">lua_next</span> <span class="token punctuation">(</span>lua_State <span class="token operator">*</span>L<span class="token punctuation">,</span> <span class="token keyword">int</span> index<span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<ol>
+<li>先从栈顶弹出一个key</li>
+<li>从栈指定位置的 table 里取相对于刚刚弹出的key的下一对key-value，先将key入栈再将 value入栈</li>
+<li>如果第2步成功则返回非0值，否则返回0，并且不向栈中压入任何值。table里第一对key-value的前面没有数据，所以先用 lua_pushnil() 压入一个 nil 充当初始 key。如果想从特定位置开始，须先将开始位置前一个key压入栈，再调用lua_next()</li>
+</ol>
+<hr>
+<h2 id="一维表的遍历"><a href="#一维表的遍历" class="headerlink" title="一维表的遍历"></a>一维表的遍历</h2><p>Lua：</p>
+<pre class=" language-lua"><code class="language-lua"><span class="token keyword">local</span> array <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token string">'a'</span><span class="token punctuation">,</span> <span class="token string">'b'</span><span class="token punctuation">,</span> <span class="token string">'c'</span><span class="token punctuation">}</span></code></pre>
+<p>Cpp:</p>
+<pre class=" language-cpp"><code class="language-cpp"><span class="token keyword">void</span> <span class="token function">traversalLuaTable</span><span class="token punctuation">(</span>lua_State <span class="token operator">*</span>L<span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+   <span class="token comment" spellcheck="true">//将全局变量array压入栈</span>
+   <span class="token function">lua_getglobal</span><span class="token punctuation">(</span>L<span class="token punctuation">,</span> <span class="token string">"array"</span><span class="token punctuation">)</span><span class="token punctuation">;</span> 
+   <span class="token comment" spellcheck="true">//table 里第一对 key-value 的前面没有数据，所以先用 lua_pushnil()压入一个 nil 始 key。</span>
+   <span class="token function">lua_pushnil</span><span class="token punctuation">(</span>L<span class="token punctuation">)</span><span class="token punctuation">;</span>
+   <span class="token comment" spellcheck="true">//此时栈顶为nil,往下才是array,故index为-2</span>
+   <span class="token keyword">while</span> <span class="token punctuation">(</span><span class="token function">lua_next</span><span class="token punctuation">(</span>L<span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">2</span><span class="token punctuation">)</span> <span class="token operator">!=</span> <span class="token number">0</span><span class="token punctuation">)</span>
+   <span class="token punctuation">{</span>
+        <span class="token comment" spellcheck="true">//因为key先入栈value后入栈,故以下index为-1</span>
+        <span class="token comment" spellcheck="true">//获取value值类型,并根据类型获取值,打印</span>
+        <span class="token keyword">auto</span> valueType <span class="token operator">=</span> <span class="token function">lua_type</span><span class="token punctuation">(</span>L<span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        std<span class="token operator">::</span>cout <span class="token operator">&lt;&lt;</span> <span class="token string">"valueType : "</span> <span class="token operator">&lt;&lt;</span> <span class="token function">lua_typename</span><span class="token punctuation">(</span>L<span class="token punctuation">,</span> valueType<span class="token punctuation">)</span> <span class="token operator">&lt;&lt;</span> std<span class="token operator">::</span>endl<span class="token punctuation">;</span>
+        <span class="token keyword">switch</span> <span class="token punctuation">(</span>valueType<span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+        <span class="token keyword">case</span> LUA_TNUMBER<span class="token operator">:</span>
+            std<span class="token operator">::</span>cout <span class="token operator">&lt;&lt;</span> <span class="token string">"value : "</span> <span class="token operator">&lt;&lt;</span> <span class="token function">lua_tonumber</span><span class="token punctuation">(</span>L<span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">&lt;&lt;</span> std<span class="token operator">::</span>endl<span class="token punctuation">;</span>
+            <span class="token keyword">break</span><span class="token punctuation">;</span>
+        <span class="token keyword">case</span> LUA_TSTRING<span class="token operator">:</span>
+            std<span class="token operator">::</span>cout <span class="token operator">&lt;&lt;</span> <span class="token string">"value : "</span> <span class="token operator">&lt;&lt;</span> <span class="token function">lua_tostring</span><span class="token punctuation">(</span>L<span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">&lt;&lt;</span> std<span class="token operator">::</span>endl<span class="token punctuation">;</span>
+            <span class="token keyword">break</span><span class="token punctuation">;</span>
+        <span class="token keyword">default</span><span class="token operator">:</span>
+            <span class="token keyword">break</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token comment" spellcheck="true">//因为key先入栈value后入栈,故以下index为-2</span>
+        <span class="token comment" spellcheck="true">//获取key值类型,并根据类型获取值,打印</span>
+        <span class="token keyword">auto</span> keyType <span class="token operator">=</span> <span class="token function">lua_type</span><span class="token punctuation">(</span>L<span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        std<span class="token operator">::</span>cout <span class="token operator">&lt;&lt;</span> <span class="token string">"keyType : "</span> <span class="token operator">&lt;&lt;</span> <span class="token function">lua_typename</span><span class="token punctuation">(</span>L<span class="token punctuation">,</span> keyType<span class="token punctuation">)</span> <span class="token operator">&lt;&lt;</span> std<span class="token operator">::</span>endl<span class="token punctuation">;</span>
+        <span class="token keyword">switch</span> <span class="token punctuation">(</span>keyType<span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+        <span class="token keyword">case</span> LUA_TNUMBER<span class="token operator">:</span>
+            std<span class="token operator">::</span>cout <span class="token operator">&lt;&lt;</span> <span class="token string">"key : "</span> <span class="token operator">&lt;&lt;</span> <span class="token function">lua_tonumber</span><span class="token punctuation">(</span>L<span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">2</span><span class="token punctuation">)</span> <span class="token operator">&lt;&lt;</span> std<span class="token operator">::</span>endl<span class="token punctuation">;</span>
+            <span class="token keyword">break</span><span class="token punctuation">;</span>
+        <span class="token keyword">case</span> LUA_TSTRING<span class="token operator">:</span>
+            std<span class="token operator">::</span>cout <span class="token operator">&lt;&lt;</span> <span class="token string">"key : "</span> <span class="token operator">&lt;&lt;</span> <span class="token function">lua_tostring</span><span class="token punctuation">(</span>L<span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">2</span><span class="token punctuation">)</span> <span class="token operator">&lt;&lt;</span> std<span class="token operator">::</span>endl<span class="token punctuation">;</span>
+            <span class="token keyword">break</span><span class="token punctuation">;</span>
+        <span class="token keyword">default</span><span class="token operator">:</span>
+            <span class="token keyword">break</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token comment" spellcheck="true">//这一步尤为重要</span>
+        <span class="token comment" spellcheck="true">//弹出value，让key留在栈顶</span>
+        <span class="token comment" spellcheck="true">//因为lua_next会先弹出前一个key,在判断table中还有没有key-value,故此处只弹出ue就可以了</span>
+        <span class="token function">lua_pop</span><span class="token punctuation">(</span>L<span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre>
+<p>输出结果:</p>
+<pre class=" language-console"><code class="language-console">valueType : string
+value : a
+keyType : number
+key : 1
+valueType : string
+value : b
+keyType : number
+key : 2
+valueType : string
+value : c
+keyType : number
+key : 3</code></pre>
+<hr>
+<h2 id="二维tabel遍历"><a href="#二维tabel遍历" class="headerlink" title="二维tabel遍历"></a>二维tabel遍历</h2><p>Lua:</p>
+<pre class=" language-lua"><code class="language-lua"><span class="token keyword">local</span> array1 <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token string">'a'</span><span class="token punctuation">,</span> <span class="token string">'b'</span><span class="token punctuation">,</span> <span class="token string">'c'</span><span class="token punctuation">}</span>
+<span class="token keyword">local</span> array2 <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token string">'d'</span><span class="token punctuation">,</span> <span class="token string">'e'</span><span class="token punctuation">,</span> <span class="token string">'f'</span><span class="token punctuation">}</span>
+<span class="token keyword">local</span> list <span class="token operator">=</span> <span class="token punctuation">{</span>array1<span class="token punctuation">,</span> array2<span class="token punctuation">}</span></code></pre>
+<p>Cpp:</p>
+<pre class=" language-cpp"><code class="language-cpp"><span class="token keyword">void</span> <span class="token function">traversalLuaTable</span><span class="token punctuation">(</span>lua_State <span class="token operator">*</span>L<span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+   <span class="token function">lua_getglobal</span><span class="token punctuation">(</span>L<span class="token punctuation">,</span> <span class="token string">"list"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+   <span class="token function">lua_pushnil</span><span class="token punctuation">(</span>L<span class="token punctuation">)</span><span class="token punctuation">;</span>
+   <span class="token keyword">while</span> <span class="token punctuation">(</span><span class="token function">lua_next</span><span class="token punctuation">(</span>L<span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">2</span><span class="token punctuation">)</span> <span class="token operator">!=</span> <span class="token number">0</span><span class="token punctuation">)</span>
+   <span class="token punctuation">{</span>
+       <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token function">lua_istable</span><span class="token punctuation">(</span>L<span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+       <span class="token punctuation">{</span>
+            <span class="token function">lua_pushnil</span><span class="token punctuation">(</span>L<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token keyword">while</span> <span class="token punctuation">(</span><span class="token function">lua_next</span><span class="token punctuation">(</span>L<span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">2</span><span class="token punctuation">)</span> <span class="token operator">!=</span> <span class="token number">0</span><span class="token punctuation">)</span>
+            <span class="token punctuation">{</span>
+                <span class="token keyword">auto</span> valueType <span class="token operator">=</span> <span class="token function">lua_type</span><span class="token punctuation">(</span>L<span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                std<span class="token operator">::</span>cout <span class="token operator">&lt;&lt;</span> <span class="token string">"valueType : "</span> <span class="token operator">&lt;&lt;</span> <span class="token function">lua_typename</span><span class="token punctuation">(</span>L<span class="token punctuation">,</span> valueType<span class="token punctuation">)</span> <span class="token operator">&lt;&lt;</span> <span class="token operator">::</span>endl<span class="token punctuation">;</span>
+                <span class="token keyword">switch</span> <span class="token punctuation">(</span>valueType<span class="token punctuation">)</span>
+                <span class="token punctuation">{</span>
+                <span class="token keyword">case</span> LUA_TNUMBER<span class="token operator">:</span>
+                    std<span class="token operator">::</span>cout <span class="token operator">&lt;&lt;</span> <span class="token string">"value : "</span> <span class="token operator">&lt;&lt;</span> <span class="token function">lua_tonumber</span><span class="token punctuation">(</span>L<span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">&lt;&lt;</span> <span class="token operator">::</span>endl<span class="token punctuation">;</span>
+                    <span class="token keyword">break</span><span class="token punctuation">;</span>
+                <span class="token keyword">case</span> LUA_TSTRING<span class="token operator">:</span>
+                    std<span class="token operator">::</span>cout <span class="token operator">&lt;&lt;</span> <span class="token string">"value : "</span> <span class="token operator">&lt;&lt;</span> <span class="token function">lua_tostring</span><span class="token punctuation">(</span>L<span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">&lt;&lt;</span> <span class="token operator">::</span>endl<span class="token punctuation">;</span>
+                    <span class="token keyword">break</span><span class="token punctuation">;</span>
+                <span class="token keyword">default</span><span class="token operator">:</span>
+                    <span class="token keyword">break</span><span class="token punctuation">;</span>
+                <span class="token punctuation">}</span>
+
+                <span class="token keyword">auto</span> keyType <span class="token operator">=</span> <span class="token function">lua_type</span><span class="token punctuation">(</span>L<span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                std<span class="token operator">::</span>cout <span class="token operator">&lt;&lt;</span> <span class="token string">"keyType : "</span> <span class="token operator">&lt;&lt;</span> <span class="token function">lua_typename</span><span class="token punctuation">(</span>L<span class="token punctuation">,</span> keyType<span class="token punctuation">)</span> <span class="token operator">&lt;&lt;</span> <span class="token operator">::</span>endl<span class="token punctuation">;</span>
+                <span class="token keyword">switch</span> <span class="token punctuation">(</span>keyType<span class="token punctuation">)</span>
+                <span class="token punctuation">{</span>
+                <span class="token keyword">case</span> LUA_TNUMBER<span class="token operator">:</span>
+                    std<span class="token operator">::</span>cout <span class="token operator">&lt;&lt;</span> <span class="token string">"key : "</span> <span class="token operator">&lt;&lt;</span> <span class="token function">lua_tonumber</span><span class="token punctuation">(</span>L<span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">2</span><span class="token punctuation">)</span> <span class="token operator">&lt;&lt;</span> std<span class="token operator">::</span>endl<span class="token punctuation">;</span>
+                    <span class="token keyword">break</span><span class="token punctuation">;</span>
+                <span class="token keyword">case</span> LUA_TSTRING<span class="token operator">:</span>
+                    std<span class="token operator">::</span>cout <span class="token operator">&lt;&lt;</span> <span class="token string">"key : "</span> <span class="token operator">&lt;&lt;</span> <span class="token function">lua_tostring</span><span class="token punctuation">(</span>L<span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">2</span><span class="token punctuation">)</span> <span class="token operator">&lt;&lt;</span> std<span class="token operator">::</span>endl<span class="token punctuation">;</span>
+                    <span class="token keyword">break</span><span class="token punctuation">;</span>
+                <span class="token keyword">default</span><span class="token operator">:</span>
+                    <span class="token keyword">break</span><span class="token punctuation">;</span>
+                <span class="token punctuation">}</span>
+                <span class="token function">lua_pop</span><span class="token punctuation">(</span>L<span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+        <span class="token function">lua_pop</span><span class="token punctuation">(</span>L<span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre>
+<p>输出结果:</p>
+<pre class=" language-console"><code class="language-console">valueType : string
+value : a
+keyType : number
+key : 1
+valueType : string
+value : b
+keyType : number
+key : 2
+valueType : string
+value : c
+keyType : number
+key : 3
+valueType : string
+value : d
+keyType : number
+key : 1
+valueType : string
+value : e
+keyType : number
+key : 2
+valueType : string
+value : f
+keyType : number
+key : 3</code></pre>
 
             </div>
             <hr/>
@@ -486,7 +644,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="kidfreedom.github.io/2020/12/04/zhi-shi-shou-ji/unity/spriteatlas/">kidfreedom.github.io/2020/12/04/zhi-shi-shou-ji/unity/spriteatlas/</a>
+                    <a href="kidfreedom.github.io/2020/12/05/zhi-shi-zheng-li/cheng-xu-yu-yan/lua/lua-next-yong-fa/">kidfreedom.github.io/2020/12/05/zhi-shi-zheng-li/cheng-xu-yu-yan/lua/lua-next-yong-fa/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -523,7 +681,11 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
+                            
+                                <a href="/tags/Lua-C-API/">
+                                    <span class="chip bg-color">Lua C API</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -667,33 +829,50 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2020/12/04/zhi-shi-shou-ji/bian-cheng-si-xiang/dip-ioc-di-yi-ji-ioc-rong-qi/">
+                <a href="/2020/12/05/zhi-shi-zheng-li/cheng-xu-yu-yan/lua/lua-gettable-he-lua-rawget-yong-fa/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="DIP_IoC_DI以及IoC容器">
+                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="lua_gettable和lua_rawget用法">
                         
-                        <span class="card-title">DIP_IoC_DI以及IoC容器</span>
+                        <span class="card-title">lua_gettable和lua_rawget用法</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            深入理解DIP、IoC、DI以及IoC容器https://www.cnblogs.com/liuhaorain/p/3747470.html#title_2
-
+                            lua_gettablevoid lua_gettable (lua_State *L, int index);
+把t[k]值压入堆栈， 这里的t是指有效索引index指向的值，而k则是栈顶放的值。
+这个函数会弹出堆栈上的key（把结果放在
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-12-04
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-12-05
                         </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            王梓臣
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E7%A8%8B%E5%BA%8F%E8%AF%AD%E8%A8%80/" class="post-category">
+                                    程序语言
+                                </a>
+                            
+                            <a href="/categories/%E7%A8%8B%E5%BA%8F%E8%AF%AD%E8%A8%80/Lua/" class="post-category">
+                                    Lua
+                                </a>
+                            
                             
                         </span>
                     </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Lua-C-API/">
+                        <span class="chip bg-color">Lua C API</span>
+                    </a>
+                    
                 </div>
                 
             </div>
@@ -705,34 +884,49 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/12/04/zhi-shi-shou-ji/unity/unitylua/">
+                <a href="/2020/12/05/zhi-shi-zheng-li/cheng-xu-yu-yan/lua/lua-xu-ni-dui-zhan/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="UnityLua">
+                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="Lua虚拟堆栈(virtual stack)">
                         
-                        <span class="card-title">UnityLua</span>
+                        <span class="card-title">Lua虚拟堆栈(virtual stack)</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Lua依赖注入https://toutiao.io/posts/kqdq7e/preview
-EmmyLuahttps://emmylua.github.io/index.html
-
+                            Lua虚拟堆栈(virtual stack)Lua 使用一个虚拟栈来和 C 传递值。 栈上的的每个元素都是一个 Lua 值 （nil，数字，字符串，等等）。
+无论何时 Lua 调用 C，被调用的函数都得到一个新的栈， 这个栈独立于 C 函数
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-12-04
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-12-05
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            王梓臣
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E7%A8%8B%E5%BA%8F%E8%AF%AD%E8%A8%80/" class="post-category">
+                                    程序语言
+                                </a>
+                            
+                            <a href="/categories/%E7%A8%8B%E5%BA%8F%E8%AF%AD%E8%A8%80/Lua/" class="post-category">
+                                    Lua
+                                </a>
+                            
                             
                         </span>
                     </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Lua-C-API/">
+                        <span class="chip bg-color">Lua C API</span>
+                    </a>
+                    
                 </div>
                 
             </div>

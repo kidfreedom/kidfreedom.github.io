@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="归档: 2020/12, 王梓臣的博客">
+    <meta name="keywords" content="归档, 王梓臣的博客">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>归档: 2020/12 | 王梓臣的博客</title>
+    <title>归档 | 王梓臣的博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -452,37 +452,39 @@
             
             
             <div class="cd-timeline-img month" data-aos="zoom-in-up">
-                <a href="/archives/2020/12">12</a>
+                <a href="/archives/2020/06">06</a>
             </div>
             
 
             
             <div class="cd-timeline-img day" data-aos="zoom-in-up">
-                <span>05</span>
+                <span>26</span>
             </div>
             <article class="cd-timeline-content" data-aos="fade-up">
                 <div class="article col s12 m6">
                     <div class="card">
-                        <a href="/2020/12/05/zhi-shi-zheng-li/cheng-xu-yu-yan/lua/lua-settable-he-lua-rawset-yong-fa/">
+                        <a href="/2020/06/26/zhi-shi-zheng-li/cheng-xu-yu-yan/c/c-zhuang-xiang-he-chai-xiang/">
                             <div class="card-image">
                                 
                                 
-                                <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="lua_settable和lua_rawset用法">
+                                <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="C#装箱和拆箱">
                                 
-                                <span class="card-title">lua_settable和lua_rawset用法</span>
+                                <span class="card-title">C#装箱和拆箱</span>
                             </div>
                         </a>
                         <div class="card-content article-content">
                             <div class="summary block-with-text">
                                 
-                                    lua_settablevoid lua_settable (lua_State *L, int index);
-等价于t[k] = v的操作， 这里t是一个给定有效索引index处的值， v指栈顶的值，而k是栈顶之下的那个值。
-这个函数会
+                                    定义装箱是将值类型转换为引用类型。拆箱是将引用类型转换为值类型。
+装箱的内存操作
+在托管堆上分配一段内存(大小为值类型实例大小加上一个方法表指针和一个SyncBlockIndex)。 
+将值类型的数据拷贝到刚刚分配的内存中。
+返回托管堆中新
                                 
                             </div>
                             <div class="publish-info">
                                 <span class="publish-date">
-                                    <i class="far fa-clock fa-fw icon-date"></i>2020-12-05
+                                    <i class="far fa-clock fa-fw icon-date"></i>2020-06-26
                                 </span>
                                 <span class="publish-author">
                                     
@@ -492,8 +494,8 @@
                                     程序语言
                                     </a>
                                     
-                                    <a href="/categories/%E7%A8%8B%E5%BA%8F%E8%AF%AD%E8%A8%80/Lua/" class="post-category">
-                                    Lua
+                                    <a href="/categories/%E7%A8%8B%E5%BA%8F%E8%AF%AD%E8%A8%80/C/" class="post-category">
+                                    C#
                                     </a>
                                     
                                     
@@ -504,7 +506,7 @@
                         
                         <div class="card-action article-tags">
                             
-                            <a href="/tags/Lua-C-API/"><span class="chip bg-color">Lua C API</span></a>
+                            <a href="/tags/%E9%9D%A2%E8%AF%95/"><span class="chip bg-color">面试</span></a>
                             
                         </div>
                         
@@ -523,31 +525,31 @@
 
             
             <div class="cd-timeline-img day" data-aos="zoom-in-up">
-                <span>05</span>
+                <span>22</span>
             </div>
             <article class="cd-timeline-content" data-aos="fade-up">
                 <div class="article col s12 m6">
                     <div class="card">
-                        <a href="/2020/12/05/zhi-shi-zheng-li/cheng-xu-yu-yan/lua/lua-gettable-he-lua-rawget-yong-fa/">
+                        <a href="/2020/06/22/zhi-shi-zheng-li/cheng-xu-yu-yan/cpp/c-kao-bei-gou-zao-han-shu/">
                             <div class="card-image">
                                 
                                 
-                                <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="lua_gettable和lua_rawget用法">
+                                <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="C++拷贝构造函数和赋值运算符">
                                 
-                                <span class="card-title">lua_gettable和lua_rawget用法</span>
+                                <span class="card-title">C++拷贝构造函数和赋值运算符</span>
                             </div>
                         </a>
                         <div class="card-content article-content">
                             <div class="summary block-with-text">
                                 
-                                    lua_gettablevoid lua_gettable (lua_State *L, int index);
-把t[k]值压入堆栈， 这里的t是指有效索引index指向的值，而k则是栈顶放的值。
-这个函数会弹出堆栈上的key（把结果放在
+                                    定义在默认情况下（用户没有定义，但是也没有显式的删除），编译器会自动的隐式生成一个拷贝构造函数和赋值运算符。但用户可以使用delete来指定不生成拷贝构造函数和赋值运算符，这样的对象就不能通过值传递，也不能进行赋值运算。
+显示定义：
+cla
                                 
                             </div>
                             <div class="publish-info">
                                 <span class="publish-date">
-                                    <i class="far fa-clock fa-fw icon-date"></i>2020-12-05
+                                    <i class="far fa-clock fa-fw icon-date"></i>2020-06-22
                                 </span>
                                 <span class="publish-author">
                                     
@@ -557,8 +559,8 @@
                                     程序语言
                                     </a>
                                     
-                                    <a href="/categories/%E7%A8%8B%E5%BA%8F%E8%AF%AD%E8%A8%80/Lua/" class="post-category">
-                                    Lua
+                                    <a href="/categories/%E7%A8%8B%E5%BA%8F%E8%AF%AD%E8%A8%80/Cpp/" class="post-category">
+                                    Cpp
                                     </a>
                                     
                                     
@@ -569,7 +571,7 @@
                         
                         <div class="card-action article-tags">
                             
-                            <a href="/tags/Lua-C-API/"><span class="chip bg-color">Lua C API</span></a>
+                            <a href="/tags/%E9%9D%A2%E8%AF%95/"><span class="chip bg-color">面试</span></a>
                             
                         </div>
                         
@@ -588,43 +590,36 @@
 
             
             <div class="cd-timeline-img day" data-aos="zoom-in-up">
-                <span>05</span>
+                <span>22</span>
             </div>
             <article class="cd-timeline-content" data-aos="fade-up">
                 <div class="article col s12 m6">
                     <div class="card">
-                        <a href="/2020/12/05/zhi-shi-zheng-li/cheng-xu-yu-yan/lua/lua-next-yong-fa/">
+                        <a href="/2020/06/22/zhi-shi-shou-ji/xuan-ran/uv-zuo-biao/">
                             <div class="card-image">
                                 
                                 
-                                <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="lua_next用法">
+                                <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="UV坐标">
                                 
-                                <span class="card-title">lua_next用法</span>
+                                <span class="card-title">UV坐标</span>
                             </div>
                         </a>
                         <div class="card-content article-content">
                             <div class="summary block-with-text">
                                 
-                                    lua_next用法int lua_next (lua_State *L, int index);
-
-先从栈顶弹出一个key
-从栈指定位置的 table 里取相对于刚刚弹出的key的下一对key-value，先将key入栈再将 value入
+                                    视频https://www.bilibili.com/video/BV1Pt411K7Jv?from=search&amp;seid=4784504123734508545https://www.bilibili.com/video/BV1
                                 
                             </div>
                             <div class="publish-info">
                                 <span class="publish-date">
-                                    <i class="far fa-clock fa-fw icon-date"></i>2020-12-05
+                                    <i class="far fa-clock fa-fw icon-date"></i>2020-06-22
                                 </span>
                                 <span class="publish-author">
                                     
                                     <i class="fas fa-bookmark fa-fw icon-category"></i>
                                     
-                                    <a href="/categories/%E7%A8%8B%E5%BA%8F%E8%AF%AD%E8%A8%80/" class="post-category">
-                                    程序语言
-                                    </a>
-                                    
-                                    <a href="/categories/%E7%A8%8B%E5%BA%8F%E8%AF%AD%E8%A8%80/Lua/" class="post-category">
-                                    Lua
+                                    <a href="/categories/%E6%B8%B2%E6%9F%93/" class="post-category">
+                                    渲染
                                     </a>
                                     
                                     
@@ -635,7 +630,7 @@
                         
                         <div class="card-action article-tags">
                             
-                            <a href="/tags/Lua-C-API/"><span class="chip bg-color">Lua C API</span></a>
+                            <a href="/tags/UV%E5%9D%90%E6%A0%87/"><span class="chip bg-color">UV坐标</span></a>
                             
                         </div>
                         
@@ -654,94 +649,34 @@
 
             
             <div class="cd-timeline-img day" data-aos="zoom-in-up">
-                <span>05</span>
+                <span>21</span>
             </div>
             <article class="cd-timeline-content" data-aos="fade-up">
                 <div class="article col s12 m6">
                     <div class="card">
-                        <a href="/2020/12/05/zhi-shi-zheng-li/cheng-xu-yu-yan/lua/lua-xu-ni-dui-zhan/">
+                        <a href="/2020/06/21/zhi-shi-zheng-li/bo-ke/bo-ke-da-jian/">
                             <div class="card-image">
                                 
                                 
-                                <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="Lua虚拟堆栈(virtual stack)">
+                                <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="Hexo搭建">
                                 
-                                <span class="card-title">Lua虚拟堆栈(virtual stack)</span>
+                                <span class="card-title">Hexo搭建</span>
                             </div>
                         </a>
                         <div class="card-content article-content">
                             <div class="summary block-with-text">
                                 
-                                    Lua虚拟堆栈(virtual stack)Lua 使用一个虚拟栈来和 C 传递值。 栈上的的每个元素都是一个 Lua 值 （nil，数字，字符串，等等）。
-无论何时 Lua 调用 C，被调用的函数都得到一个新的栈， 这个栈独立于 C 函数
+                                    安装Node.js
+下载地址，安装选项全部默认，一路点击Next。
+安装检查，Win+R打开命令提示符，输入node -v和npm -v，如果出现版本号，那么就安装成功了。
+
+创建本地Hexo
+找一个地方新建一个文件夹，用来存放自己的博客文
                                 
                             </div>
                             <div class="publish-info">
                                 <span class="publish-date">
-                                    <i class="far fa-clock fa-fw icon-date"></i>2020-12-05
-                                </span>
-                                <span class="publish-author">
-                                    
-                                    <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                    
-                                    <a href="/categories/%E7%A8%8B%E5%BA%8F%E8%AF%AD%E8%A8%80/" class="post-category">
-                                    程序语言
-                                    </a>
-                                    
-                                    <a href="/categories/%E7%A8%8B%E5%BA%8F%E8%AF%AD%E8%A8%80/Lua/" class="post-category">
-                                    Lua
-                                    </a>
-                                    
-                                    
-                                </span>
-                            </div>
-                        </div>
-
-                        
-                        <div class="card-action article-tags">
-                            
-                            <a href="/tags/Lua-C-API/"><span class="chip bg-color">Lua C API</span></a>
-                            
-                        </div>
-                        
-                    </div>
-                </div>
-            </article>
-        </div>
-        
-        <div class="cd-timeline-block">
-
-            
-            
-
-            
-            
-
-            
-            <div class="cd-timeline-img day" data-aos="zoom-in-up">
-                <span>04</span>
-            </div>
-            <article class="cd-timeline-content" data-aos="fade-up">
-                <div class="article col s12 m6">
-                    <div class="card">
-                        <a href="/2020/12/04/zhi-shi-zheng-li/bo-ke/hexo-bo-ke-tian-jia-yin-cang-wen-zhang-gong-neng/">
-                            <div class="card-image">
-                                
-                                
-                                <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="Hexo博客添加隐藏文章功能">
-                                
-                                <span class="card-title">Hexo博客添加隐藏文章功能</span>
-                            </div>
-                        </a>
-                        <div class="card-content article-content">
-                            <div class="summary block-with-text">
-                                
-                                    为 Hexo 博客添加隐藏文章功能https://printempw.github.io/hexo-plugin-to-make-posts-sage-unlisted/
-于是我写了一个 Hexo 插件 hexo-hide-posts 来实
-                                
-                            </div>
-                            <div class="publish-info">
-                                <span class="publish-date">
-                                    <i class="far fa-clock fa-fw icon-date"></i>2020-12-04
+                                    <i class="far fa-clock fa-fw icon-date"></i>2020-06-21
                                 </span>
                                 <span class="publish-author">
                                     
@@ -757,355 +692,11 @@
                         </div>
 
                         
-                    </div>
-                </div>
-            </article>
-        </div>
-        
-        <div class="cd-timeline-block">
-
-            
-            
-
-            
-            
-
-            
-            <div class="cd-timeline-img day" data-aos="zoom-in-up">
-                <span>04</span>
-            </div>
-            <article class="cd-timeline-content" data-aos="fade-up">
-                <div class="article col s12 m6">
-                    <div class="card">
-                        <a href="/2020/12/04/zhi-shi-shou-ji/bian-cheng-si-xiang/gai-shan-csharp-cheng-xu-de-50-chong-fang-fa/">
-                            <div class="card-image">
-                                
-                                
-                                <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="改善CSharp程序的50种方法">
-                                
-                                <span class="card-title">改善CSharp程序的50种方法</span>
-                            </div>
-                        </a>
-                        <div class="card-content article-content">
-                            <div class="summary block-with-text">
-                                
-                                    Effective C# 改善C#程序的50种方法https://wizardforcel.gitbooks.io/effective-csharp/content/
-读书笔记https://kb.cnblogs.com/page/1067
-                                
-                            </div>
-                            <div class="publish-info">
-                                <span class="publish-date">
-                                    <i class="far fa-clock fa-fw icon-date"></i>2020-12-04
-                                </span>
-                                <span class="publish-author">
-                                    
-                                    <i class="fas fa-user fa-fw"></i>
-                                    王梓臣
-                                    
-                                </span>
-                            </div>
+                        <div class="card-action article-tags">
+                            
+                            <a href="/tags/Hexo/"><span class="chip bg-color">Hexo</span></a>
+                            
                         </div>
-
-                        
-                    </div>
-                </div>
-            </article>
-        </div>
-        
-        <div class="cd-timeline-block">
-
-            
-            
-
-            
-            
-
-            
-            <div class="cd-timeline-img day" data-aos="zoom-in-up">
-                <span>04</span>
-            </div>
-            <article class="cd-timeline-content" data-aos="fade-up">
-                <div class="article col s12 m6">
-                    <div class="card">
-                        <a href="/2020/12/04/zhi-shi-shou-ji/jiao-cheng/jiao-cheng/">
-                            <div class="card-image">
-                                
-                                
-                                <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="教程">
-                                
-                                <span class="card-title">教程</span>
-                            </div>
-                        </a>
-                        <div class="card-content article-content">
-                            <div class="summary block-with-text">
-                                
-                                    C# and Shader Tutorials for the Unity Enginehttps://catlikecoding.com/unity/tutorials/
-
-                                
-                            </div>
-                            <div class="publish-info">
-                                <span class="publish-date">
-                                    <i class="far fa-clock fa-fw icon-date"></i>2020-12-04
-                                </span>
-                                <span class="publish-author">
-                                    
-                                    <i class="fas fa-user fa-fw"></i>
-                                    王梓臣
-                                    
-                                </span>
-                            </div>
-                        </div>
-
-                        
-                    </div>
-                </div>
-            </article>
-        </div>
-        
-        <div class="cd-timeline-block">
-
-            
-            
-
-            
-            
-
-            
-            <div class="cd-timeline-img day" data-aos="zoom-in-up">
-                <span>04</span>
-            </div>
-            <article class="cd-timeline-content" data-aos="fade-up">
-                <div class="article col s12 m6">
-                    <div class="card">
-                        <a href="/2020/12/04/zhi-shi-shou-ji/xuan-ran/mo-hu-suan-fa/">
-                            <div class="card-image">
-                                
-                                
-                                <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="模糊算法">
-                                
-                                <span class="card-title">模糊算法</span>
-                            </div>
-                        </a>
-                        <div class="card-content article-content">
-                            <div class="summary block-with-text">
-                                
-                                    模糊算法https://zhuanlan.zhihu.com/p/125744132https://github.com/QianMo/X-PostProcessing-Library
-
-                                
-                            </div>
-                            <div class="publish-info">
-                                <span class="publish-date">
-                                    <i class="far fa-clock fa-fw icon-date"></i>2020-12-04
-                                </span>
-                                <span class="publish-author">
-                                    
-                                    <i class="fas fa-user fa-fw"></i>
-                                    王梓臣
-                                    
-                                </span>
-                            </div>
-                        </div>
-
-                        
-                    </div>
-                </div>
-            </article>
-        </div>
-        
-        <div class="cd-timeline-block">
-
-            
-            
-
-            
-            
-
-            
-            <div class="cd-timeline-img day" data-aos="zoom-in-up">
-                <span>04</span>
-            </div>
-            <article class="cd-timeline-content" data-aos="fade-up">
-                <div class="article col s12 m6">
-                    <div class="card">
-                        <a href="/2020/12/04/zhi-shi-shou-ji/wang-luo-bian-cheng/litenetlib/">
-                            <div class="card-image">
-                                
-                                
-                                <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="LiteNetLib">
-                                
-                                <span class="card-title">LiteNetLib</span>
-                            </div>
-                        </a>
-                        <div class="card-content article-content">
-                            <div class="summary block-with-text">
-                                
-                                    LiteNetLibhttps://hebomou.top/archives/1729
-
-                                
-                            </div>
-                            <div class="publish-info">
-                                <span class="publish-date">
-                                    <i class="far fa-clock fa-fw icon-date"></i>2020-12-04
-                                </span>
-                                <span class="publish-author">
-                                    
-                                    <i class="fas fa-user fa-fw"></i>
-                                    王梓臣
-                                    
-                                </span>
-                            </div>
-                        </div>
-
-                        
-                    </div>
-                </div>
-            </article>
-        </div>
-        
-        <div class="cd-timeline-block">
-
-            
-            
-
-            
-            
-
-            
-            <div class="cd-timeline-img day" data-aos="zoom-in-up">
-                <span>04</span>
-            </div>
-            <article class="cd-timeline-content" data-aos="fade-up">
-                <div class="article col s12 m6">
-                    <div class="card">
-                        <a href="/2020/12/04/zhi-shi-shou-ji/unity/zenject/">
-                            <div class="card-image">
-                                
-                                
-                                <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="Zenject">
-                                
-                                <span class="card-title">Zenject</span>
-                            </div>
-                        </a>
-                        <div class="card-content article-content">
-                            <div class="summary block-with-text">
-                                
-                                    https://blog.csdn.net/weixin_43405845/article/details/104344019https://blog.csdn.net/weixin_43405845/category_9725154.ht
-                                
-                            </div>
-                            <div class="publish-info">
-                                <span class="publish-date">
-                                    <i class="far fa-clock fa-fw icon-date"></i>2020-12-04
-                                </span>
-                                <span class="publish-author">
-                                    
-                                    <i class="fas fa-user fa-fw"></i>
-                                    王梓臣
-                                    
-                                </span>
-                            </div>
-                        </div>
-
-                        
-                    </div>
-                </div>
-            </article>
-        </div>
-        
-        <div class="cd-timeline-block">
-
-            
-            
-
-            
-            
-
-            
-            <div class="cd-timeline-img day" data-aos="zoom-in-up">
-                <span>04</span>
-            </div>
-            <article class="cd-timeline-content" data-aos="fade-up">
-                <div class="article col s12 m6">
-                    <div class="card">
-                        <a href="/2020/12/04/zhi-shi-shou-ji/bian-cheng-si-xiang/dip-ioc-di-yi-ji-ioc-rong-qi/">
-                            <div class="card-image">
-                                
-                                
-                                <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="DIP_IoC_DI以及IoC容器">
-                                
-                                <span class="card-title">DIP_IoC_DI以及IoC容器</span>
-                            </div>
-                        </a>
-                        <div class="card-content article-content">
-                            <div class="summary block-with-text">
-                                
-                                    深入理解DIP、IoC、DI以及IoC容器https://www.cnblogs.com/liuhaorain/p/3747470.html#title_2
-
-                                
-                            </div>
-                            <div class="publish-info">
-                                <span class="publish-date">
-                                    <i class="far fa-clock fa-fw icon-date"></i>2020-12-04
-                                </span>
-                                <span class="publish-author">
-                                    
-                                    <i class="fas fa-user fa-fw"></i>
-                                    王梓臣
-                                    
-                                </span>
-                            </div>
-                        </div>
-
-                        
-                    </div>
-                </div>
-            </article>
-        </div>
-        
-        <div class="cd-timeline-block">
-
-            
-            
-
-            
-            
-
-            
-            <div class="cd-timeline-img day" data-aos="zoom-in-up">
-                <span>04</span>
-            </div>
-            <article class="cd-timeline-content" data-aos="fade-up">
-                <div class="article col s12 m6">
-                    <div class="card">
-                        <a href="/2020/12/04/zhi-shi-shou-ji/unity/spriteatlas/">
-                            <div class="card-image">
-                                
-                                
-                                <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="SpriteAtlas">
-                                
-                                <span class="card-title">SpriteAtlas</span>
-                            </div>
-                        </a>
-                        <div class="card-content article-content">
-                            <div class="summary block-with-text">
-                                
-                                    https://www.jianshu.com/p/2640bdb29fdc
-https://blog.csdn.net/egostudio/article/details/104695907
-http://www.liuocean.com
-                                
-                            </div>
-                            <div class="publish-info">
-                                <span class="publish-date">
-                                    <i class="far fa-clock fa-fw icon-date"></i>2020-12-04
-                                </span>
-                                <span class="publish-author">
-                                    
-                                    <i class="fas fa-user fa-fw"></i>
-                                    王梓臣
-                                    
-                                </span>
-                            </div>
-                        </div>
-
                         
                     </div>
                 </div>
@@ -1121,18 +712,18 @@ http://www.liuocean.com
     <div class="row">
         <div class="col s6 m4 l4">
             
-            <a class="left btn-floating btn-large disabled">
+            <a href="/archives/page/2/"
+               class="left btn-floating btn-large waves-effect waves-light bg-color">
                 <i class="fas fa-angle-left"></i>
             </a>
             
         </div>
         <div class="page-info col m4 l4 hide-on-small-only">
-            <div class="center-align b-text-gray">1 / 2</div>
+            <div class="center-align b-text-gray">3 / 3</div>
         </div>
         <div class="col s6 m4 l4">
             
-            <a href="/archives/2020/12/page/2/"
-               class="right btn-floating btn-large waves-effect waves-light bg-color">
+            <a class="right btn-floating btn-large disabled">
                 <i class="fas fa-angle-right"></i>
             </a>
             
